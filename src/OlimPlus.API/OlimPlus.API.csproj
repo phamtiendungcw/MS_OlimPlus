@@ -14,4 +14,10 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OlimPlus.Appllication\OlimPlus.Appllication.csproj" />
+    <ProjectReference Include="..\OlimPlus.Infrastructure\OlimPlus.Infrastructure.csproj" />
+    <ProjectReference Include="..\OlimPlus.Persistence\OlimPlus.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
