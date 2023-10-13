@@ -7,11 +7,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="..\..\.editorconfig" Link=".editorconfig" />
+		<Folder Include="Features\User\Commands\" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\OlimPlus.Application\OlimPlus.Application.csproj" />
+	  <ProjectReference Include="..\OlimPlus.Domain\OlimPlus.Domain.csproj" />
 	</ItemGroup>
 
 </Project>

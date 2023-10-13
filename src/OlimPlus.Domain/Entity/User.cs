@@ -15,6 +15,7 @@ namespace OlimPlus.Domain.Entity
         public string CMND { get; set; }
         public DateOnly DOB { get; set; }
         public Blob Image { get; set; }
+        public string Status { get; set; }
 
         public ICollection<Address> Addresses { get; set; }
     }

@@ -1,23 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Controllers\" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\OlimPlus.Appllication\OlimPlus.Appllication.csproj" />
-    <ProjectReference Include="..\OlimPlus.Infrastructure\OlimPlus.Infrastructure.csproj" />
-    <ProjectReference Include="..\OlimPlus.Persistence\OlimPlus.Persistence.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\OlimPlus.Application\OlimPlus.Application.csproj" />
+	  <ProjectReference Include="..\OlimPlus.Infrastructure\OlimPlus.Infrastructure.csproj" />
+	  <ProjectReference Include="..\OlimPlus.Persistence\OlimPlus.Persistence.csproj" />
+	</ItemGroup>
 
 </Project>

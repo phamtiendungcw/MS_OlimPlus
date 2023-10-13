@@ -2,9 +2,9 @@
 
 namespace OlimPlus.Domain.Entity
 {
-    public class Sale : BaseEntity
+    public class Role : BaseEntity
     {
         public string Name { get; set; }
-        public string Code { get; set; }
+        public string Privileges { get; set; }
     }
 }
