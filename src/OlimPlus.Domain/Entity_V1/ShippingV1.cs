@@ -1,6 +1,6 @@
 ﻿namespace OlimPlus.Domain.Entity
 {
-    public class Cart
+    public class ShippingV1
     {
     }
 }

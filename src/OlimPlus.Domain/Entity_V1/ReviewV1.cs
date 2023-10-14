@@ -1,6 +1,6 @@
 ﻿namespace OlimPlus.Domain.Entity
 {
-    public class Review
+    public class ReviewV1
     {
     }
 }

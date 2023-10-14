@@ -2,14 +2,14 @@
 
 namespace OlimPlus.Domain.Entity
 {
-    public class Payment : BaseEntity
+    public class PaymentV1 : BaseEntity
     {
         public int OrderId { get; set; }
         public int Amount { get; set; }
         public string Status { get; set; }
         public int UserId { get; set; }
 
-        public User User { get; set; }
-        public Order Order { get; set; }
+        public UserV1 User { get; set; }
+        public OrderV1 Order { get; set; }
     }
 }

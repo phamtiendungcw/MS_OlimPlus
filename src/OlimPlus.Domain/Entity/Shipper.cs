@@ -2,7 +2,7 @@
 
 namespace OlimPlus.Domain.Entity
 {
-    public class Customer : BaseEntity
+    public class Shipper : BaseEntity
     {
     }
 }
