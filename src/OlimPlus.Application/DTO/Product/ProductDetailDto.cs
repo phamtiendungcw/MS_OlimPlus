@@ -1,6 +1,6 @@
 ﻿namespace OlimPlus.Application.DTO.Product
 {
-    public class UpdateProductDto
+    public class ProductDetailDto
     {
     }
 }

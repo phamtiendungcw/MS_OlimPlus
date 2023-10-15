@@ -1,6 +1,7 @@
-﻿namespace OlimPlus.Application.Features.Product.Queries.GetCategoryDetails
+﻿using MediatR;
+using OlimPlus.Application.DTO.Product;
+
+namespace OlimPlus.Application.Features.Product.Queries.GetCategoryDetails
 {
-    public class GetProductDetailsQuery
-    {
-    }
+    public record GetProductDetailsQuery(int Id) : IRequest<ProductDetailDto>;
 }

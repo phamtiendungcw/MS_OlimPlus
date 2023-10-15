@@ -1,6 +1,7 @@
-﻿namespace OlimPlus.Application.Features.Product.Queries.GetAllProducts
+﻿using MediatR;
+using OlimPlus.Application.DTO.Product;
+
+namespace OlimPlus.Application.Features.Product.Queries.GetAllProducts
 {
-    public class GetAllProductsQuery
-    {
-    }
+    public record GetAllProductsQuery : IRequest<List<ProductDto>>;
 }

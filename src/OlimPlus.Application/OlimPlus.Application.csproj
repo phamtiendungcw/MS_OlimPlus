@@ -8,13 +8,18 @@
 
 	<ItemGroup>
 		<Folder Include="Features\Category\Commands\" />
-		<Folder Include="Features\Product\Commands\" />
+		<Folder Include="Features\Brand\" />
+		<Folder Include="Features\Customer\" />
+		<Folder Include="Features\Shipper\" />
+		<Folder Include="Features\Order\" />
 		<Folder Include="Features\User\Commands\" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="AutoMapper" Version="12.0.1" />
 	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	  <PackageReference Include="FluentValidation" Version="11.7.1" />
+	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
 	  <PackageReference Include="MediatR" Version="12.1.1" />
 	</ItemGroup>
 
