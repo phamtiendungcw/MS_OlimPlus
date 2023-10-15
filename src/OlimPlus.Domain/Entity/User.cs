@@ -16,6 +16,6 @@ namespace OlimPlus.Domain.Entity
         public Blob Image { get; set; }
         public string PhotoPath { get; set; }
 
-        public Address? Address { get; set; }
+        public ICollection<Address> Addresses { get; set; }
     }
 }

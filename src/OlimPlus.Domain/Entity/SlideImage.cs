@@ -2,8 +2,7 @@
 
 namespace OlimPlus.Domain.Entity
 {
-    public class Brand : BaseEntity
+    public class SlideImage : BaseEntity
     {
-        public string BrandName { get; set; }
     }
 }
