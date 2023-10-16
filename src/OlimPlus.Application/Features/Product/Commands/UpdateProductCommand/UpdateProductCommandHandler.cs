@@ -20,7 +20,6 @@ namespace OlimPlus.Application.Features.Product.Commands.UpdateProductCommand
         {
             // Validate data
 
-
             // Convert to domain entity object
             var productToUpdate = _mapper.Map<Entity.Product>(request);
 
