@@ -7,7 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Features\Category\Commands\" />
 		<Folder Include="Features\Brand\" />
 		<Folder Include="Features\Customer\" />
 		<Folder Include="Features\Shipper\" />

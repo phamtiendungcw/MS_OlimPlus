@@ -1,6 +1,7 @@
-﻿namespace OlimPlus.Application.Features.Category.Queries.GetAllCategories
+﻿using MediatR;
+using OlimPlus.Application.DTO.Category;
+
+namespace OlimPlus.Application.Features.Category.Queries.GetAllCategories
 {
-    public class GetAllCategoriesQuery
-    {
-    }
+    public record GetAllCategoriesQuery : IRequest<List<CategoryDto>>;
 }

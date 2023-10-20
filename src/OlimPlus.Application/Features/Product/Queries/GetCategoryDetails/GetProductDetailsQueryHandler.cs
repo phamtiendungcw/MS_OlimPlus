@@ -23,7 +23,7 @@ namespace OlimPlus.Application.Features.Product.Queries.GetCategoryDetails
 
             // Verify that record exists
             if (product == null)
-                throw new NotFoundException(nameof(Product), request.Id);
+                throw new NotFoundException(nameof(Domain.Entity.Product), request.Id);
 
             var data = _mapper.Map<ProductDetailDto>(product);
 

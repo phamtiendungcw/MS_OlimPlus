@@ -20,7 +20,7 @@ namespace OlimPlus.Application.Features.Product.Commands.DeleteProductCommand
 
             // Verify that record exists
             if (productToDelete == null)
-                throw new NotFoundException(nameof(Product), request.Id);
+                throw new NotFoundException(nameof(Domain.Entity.Product), request.Id);
 
             // Remove from database
             await _productRepository.DeleteAsync(productToDelete);
