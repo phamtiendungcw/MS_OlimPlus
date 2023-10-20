@@ -10,7 +10,6 @@
 		<Folder Include="Features\Brand\" />
 		<Folder Include="Features\Customer\" />
 		<Folder Include="Features\Shipper\" />
-		<Folder Include="Features\Order\" />
 		<Folder Include="Features\User\Commands\" />
 	</ItemGroup>
 
