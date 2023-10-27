@@ -18,7 +18,8 @@ namespace OlimPlus.Application.Features.Category.Queries.GetCategoryDetails
             _mapper = mapper;
         }
 
-        public async Task<CategoryDetailDto> Handle(GetCategoryDetailsQuery request, CancellationToken cancellationToken)
+        public async Task<CategoryDetailDto> Handle(GetCategoryDetailsQuery request,
+            CancellationToken cancellationToken)
         {
             var category = await _categoryRepository.GetByIdAsync(request.Id);
 
