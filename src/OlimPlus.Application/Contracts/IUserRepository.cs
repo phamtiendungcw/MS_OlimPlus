@@ -1,6 +1,9 @@
-﻿namespace OlimPlus.Application.Contracts
+﻿using OlimPlus.Application.Contracts.Common;
+using OlimPlus.Domain.Entity;
+
+namespace OlimPlus.Application.Contracts
 {
-    public interface IUserRepository
+    public interface IUserRepository : IGenericRepository<User>
     {
     }
 }

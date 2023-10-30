@@ -1,6 +1,9 @@
-﻿namespace OlimPlus.Application.Contracts
+﻿using OlimPlus.Application.Contracts.Common;
+using OlimPlus.Domain.Entity;
+
+namespace OlimPlus.Application.Contracts
 {
-    public interface ICartRepository
+    public interface ICartRepository : IGenericRepository<Cart>
     {
     }
 }
