@@ -1,9 +1,0 @@
-﻿using OlimPlus.Domain.Entity.Common;
-
-namespace OlimPlus.Domain.Entity
-{
-    public class Brand : BaseEntity
-    {
-        public string BrandName { get; set; }
-    }
-}
