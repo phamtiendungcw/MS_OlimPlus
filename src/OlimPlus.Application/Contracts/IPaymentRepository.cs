@@ -3,8 +3,7 @@ using OlimPlus.Domain.Entity;
 
 namespace OlimPlus.Application.Contracts
 {
-    public interface ICategoryRepository : IGenericRepository<Category>
+    public interface IPaymentRepository : IGenericRepository<Payment>
     {
-        Task<bool> IsCategoryUnique(string name);
     }
 }

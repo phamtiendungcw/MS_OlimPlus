@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using OlimPlus.Application.Contracts;
+using OlimPlus.Application.Exceptions;
 using Entity = OlimPlus.Domain.Entity;
 
 namespace OlimPlus.Application.Features.Product.Commands.CreateProductCommand
@@ -18,8 +19,13 @@ namespace OlimPlus.Application.Features.Product.Commands.CreateProductCommand
 
         public async Task<int> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
-            var productToCreate = _mapper.Map<Entity.Product>(request);
+            var validator = new CreateProductCommandValidator(_productRepository);
+            var validatorResult = await validator.ValidateAsync(request);
 
+            if (validatorResult.Errors.Any())
+                throw new BadRequestException("Invalid product", validatorResult);
+
+            var productToCreate = _mapper.Map<Entity.Product>(request);
             await _productRepository.CreateAsync(productToCreate);
 
             return productToCreate.Id;

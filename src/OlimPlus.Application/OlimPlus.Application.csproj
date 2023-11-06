@@ -7,7 +7,24 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Folder Include="DTO\Manufacturer\" />
+		<Folder Include="DTO\Image\" />
+		<Folder Include="DTO\Customer\" />
+		<Folder Include="DTO\Address\" />
+		<Folder Include="DTO\Coupon\" />
+		<Folder Include="DTO\Cart\" />
+		<Folder Include="DTO\Review\" />
+		<Folder Include="DTO\Payment\" />
 		<Folder Include="Features\Customer\" />
+		<Folder Include="Features\Image\" />
+		<Folder Include="Features\Address\" />
+		<Folder Include="Features\Manufacturer\" />
+		<Folder Include="Features\Coupon\" />
+		<Folder Include="Features\CartItem\" />
+		<Folder Include="Features\Review\" />
+		<Folder Include="Features\ProductAttribute\" />
+		<Folder Include="Features\OrderDetail\" />
+		<Folder Include="Features\Payment\" />
 		<Folder Include="Features\User\Commands\" />
 	</ItemGroup>
 
