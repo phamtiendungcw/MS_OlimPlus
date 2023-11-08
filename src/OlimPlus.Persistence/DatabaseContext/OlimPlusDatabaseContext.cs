@@ -4,9 +4,9 @@ using OlimPlus.Domain.Entity.Common;
 
 namespace OlimPlus.Persistence.DatabaseContext
 {
-    public class OlimPlusContext : DbContext
+    public class OlimPlusDatabaseContext : DbContext
     {
-        public OlimPlusContext(DbContextOptions<OlimPlusContext> options) : base(options)
+        public OlimPlusDatabaseContext(DbContextOptions<OlimPlusDatabaseContext> options) : base(options)
         {
         }
 
@@ -25,11 +25,11 @@ namespace OlimPlus.Persistence.DatabaseContext
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Payment> Payments { get; set; }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.ApplyConfigurationsFromAssembly(typeof(OlimPlusContext).Assembly);
-        //    base.OnModelCreating(modelBuilder);
-        //}
+        protected override void OnModelCreating(ModelBuilder modelbuilder)
+        {
+            modelbuilder.ApplyConfigurationsFromAssembly(typeof(OlimPlusDatabaseContext).Assembly);
+            base.OnModelCreating(modelbuilder);
+        }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
