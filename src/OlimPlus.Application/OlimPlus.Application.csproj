@@ -7,24 +7,22 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="DTO\Manufacturer\" />
-		<Folder Include="DTO\Image\" />
-		<Folder Include="DTO\Customer\" />
-		<Folder Include="DTO\Address\" />
-		<Folder Include="DTO\Coupon\" />
-		<Folder Include="DTO\Cart\" />
-		<Folder Include="DTO\Review\" />
-		<Folder Include="DTO\Payment\" />
-		<Folder Include="Features\Customer\" />
-		<Folder Include="Features\Image\" />
-		<Folder Include="Features\Address\" />
-		<Folder Include="Features\Manufacturer\" />
-		<Folder Include="Features\Coupon\" />
-		<Folder Include="Features\CartItem\" />
-		<Folder Include="Features\Review\" />
-		<Folder Include="Features\ProductAttribute\" />
-		<Folder Include="Features\OrderDetail\" />
-		<Folder Include="Features\Payment\" />
+		<Folder Include="Features\CartItem\Commands\" />
+		<Folder Include="Features\Coupon\Commands\" />
+		<Folder Include="Features\Customer\Commands\" />
+		<Folder Include="Features\Customer\Queries\" />
+		<Folder Include="Features\Image\Commands\" />
+		<Folder Include="Features\Image\Queries\" />
+		<Folder Include="Features\Manufacturer\Commands\" />
+		<Folder Include="Features\Manufacturer\Queries\" />
+		<Folder Include="Features\OrderDetail\Commands\" />
+		<Folder Include="Features\OrderDetail\Queries\" />
+		<Folder Include="Features\Payment\Commands\" />
+		<Folder Include="Features\Payment\Queries\" />
+		<Folder Include="Features\ProductAttribute\Commands\" />
+		<Folder Include="Features\ProductAttribute\Queries\" />
+		<Folder Include="Features\Review\Commands\" />
+		<Folder Include="Features\Review\Queries\" />
 		<Folder Include="Features\User\Commands\" />
 	</ItemGroup>
 
