@@ -1,6 +1,8 @@
-﻿namespace OlimPlus.Domain.Entity
+﻿using OlimPlus.Domain.Entity.Common;
+
+namespace OlimPlus.Domain.Entity
 {
-    public class CartItem
+    public class CartItem : BaseEntity
     {
         public int CustomerId { get; set; }
         public int ProductId { get; set; }
