@@ -7,16 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Features\CartItem\Commands\" />
-		<Folder Include="Features\Coupon\Commands\" />
-		<Folder Include="Features\Customer\Commands\" />
-		<Folder Include="Features\Customer\Queries\" />
-		<Folder Include="Features\Image\Commands\" />
-		<Folder Include="Features\Image\Queries\" />
-		<Folder Include="Features\Manufacturer\Commands\" />
-		<Folder Include="Features\Manufacturer\Queries\" />
-		<Folder Include="Features\OrderDetail\Commands\" />
-		<Folder Include="Features\OrderDetail\Queries\" />
 		<Folder Include="Features\Payment\Commands\" />
 		<Folder Include="Features\Payment\Queries\" />
 		<Folder Include="Features\ProductAttribute\Commands\" />
