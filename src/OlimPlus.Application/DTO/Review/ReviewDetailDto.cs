@@ -1,6 +1,6 @@
 ﻿namespace OlimPlus.Application.DTO.Review
 {
-    internal class ReviewDetailDto
+    public class ReviewDetailDto
     {
     }
 }

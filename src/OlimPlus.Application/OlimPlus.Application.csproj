@@ -7,12 +7,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Features\Payment\Commands\" />
-		<Folder Include="Features\Payment\Queries\" />
-		<Folder Include="Features\ProductAttribute\Commands\" />
-		<Folder Include="Features\ProductAttribute\Queries\" />
-		<Folder Include="Features\Review\Commands\" />
-		<Folder Include="Features\Review\Queries\" />
+	  <Compile Remove="Features\Payment\Queries\GetPaymentDetails\GetPaymentDetails\**" />
+	  <EmbeddedResource Remove="Features\Payment\Queries\GetPaymentDetails\GetPaymentDetails\**" />
+	  <None Remove="Features\Payment\Queries\GetPaymentDetails\GetPaymentDetails\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<Folder Include="Features\User\Commands\" />
 	</ItemGroup>
 

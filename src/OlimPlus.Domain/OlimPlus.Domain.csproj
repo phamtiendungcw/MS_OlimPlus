@@ -6,10 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Entity_V1\**" />
-    <EmbeddedResource Remove="Entity_V1\**" />
-    <None Remove="Entity_V1\**" />
-  </ItemGroup>
-
 </Project>
