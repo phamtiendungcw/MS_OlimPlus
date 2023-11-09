@@ -1,21 +1,23 @@
-﻿using System.Reflection.Metadata;
+﻿using OlimPlus.Domain.Entity.Common;
+using System.Reflection.Metadata;
 
 namespace OlimPlus.Domain.Entity
 {
-    public class User
+    public class User : BaseEntity
     {
-        public int Id { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string? DisplayName { get; set; }
-        public string? Email { get; set; }
-        public string PhoneNumber { get; set; }
-        public DateOnly DOB { get; set; }
+        public int CustomerId { get; set; }
+        public string UserName { get; set; } = String.Empty;
+        public string Password { get; set; } = String.Empty;
+        public string FirstName { get; set; } = String.Empty;
+        public string LastName { get; set; } = String.Empty;
+        public string DisplayName { get; set; } = String.Empty;
+        public string Email { get; set; } = String.Empty;
+        public string PhoneNumber { get; set; } = String.Empty;
+        public DateOnly? DOB { get; set; }
         public Blob Image { get; set; }
-        public string PhotoPath { get; set; }
-
-        public ICollection<Address> Addresses { get; set; }
+        public string? PhotoPath { get; set; } = String.Empty;
+        public bool IsManager { get; set; }
+        public Customer Customer { get; set; }
+        public List<Address> Addresses { get; set; }
     }
 }

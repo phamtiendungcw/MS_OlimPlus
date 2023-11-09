@@ -7,7 +7,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Features\Customer\" />
+		<Folder Include="Features\Payment\Commands\" />
+		<Folder Include="Features\Payment\Queries\" />
+		<Folder Include="Features\ProductAttribute\Commands\" />
+		<Folder Include="Features\ProductAttribute\Queries\" />
+		<Folder Include="Features\Review\Commands\" />
+		<Folder Include="Features\Review\Queries\" />
 		<Folder Include="Features\User\Commands\" />
 	</ItemGroup>
 

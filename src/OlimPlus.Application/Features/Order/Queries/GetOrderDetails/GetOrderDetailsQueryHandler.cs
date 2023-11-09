@@ -22,7 +22,7 @@ namespace OlimPlus.Application.Features.Order.Queries.GetOrderDetails
             var order = await _orderRepository.GetByIdAsync(request.id);
 
             if (order == null)
-                throw new NotFoundException(nameof(Domain.Entity.Order), request.id);
+                throw new NotFoundException(nameof(Domain.Entity.OrderDetail), request.id);
 
             var data = _mapper.Map<OrderDetailDto>(order);
 

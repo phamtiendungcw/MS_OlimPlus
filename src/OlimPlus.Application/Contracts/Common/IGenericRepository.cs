@@ -1,15 +1,17 @@
-﻿namespace OlimPlus.Application.Contracts.Common
+﻿using OlimPlus.Domain.Entity.Common;
+
+namespace OlimPlus.Application.Contracts.Common
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T> where T : BaseEntity
     {
-        Task<List<T>> GetAllAsync();
+        Task CreateAsync(T entity);
+
+        Task DeleteAsync(T entity);
+
+        Task<IReadOnlyList<T>> GetAllAsync();
 
         Task<T> GetByIdAsync(int id);
 
-        Task CreateAsync(T entity);
-
         Task UpdateAsync(T entity);
-
-        Task DeleteAsync(T entity);
     }
 }

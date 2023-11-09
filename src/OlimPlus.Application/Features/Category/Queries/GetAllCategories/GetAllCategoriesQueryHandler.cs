@@ -20,6 +20,7 @@ namespace OlimPlus.Application.Features.Category.Queries.GetAllCategories
         {
             var categories = await _categoryRepository.GetAllAsync();
             var data = _mapper.Map<List<CategoryDto>>(categories);
+
             return data;
         }
     }

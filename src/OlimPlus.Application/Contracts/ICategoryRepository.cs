@@ -5,5 +5,6 @@ namespace OlimPlus.Application.Contracts
 {
     public interface ICategoryRepository : IGenericRepository<Category>
     {
+        Task<bool> IsCategoryUnique(string name);
     }
 }

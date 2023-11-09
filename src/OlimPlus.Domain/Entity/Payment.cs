@@ -7,7 +7,7 @@ namespace OlimPlus.Domain.Entity
         public int OrderId { get; set; }
         public DateTime PaymentDate { get; set; }
         public decimal PaymentAmount { get; set; }
-        public string PaymentMethod { get; set; }
+        public string PaymentMethod { get; set; } = String.Empty;
         public Order Order { get; set; }
     }
 }
