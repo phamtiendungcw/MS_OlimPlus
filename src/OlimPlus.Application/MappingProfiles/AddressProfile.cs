@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using OlimPlus.Application.DTO.Address;
+using OlimPlus.Domain.Entity;
 
 namespace OlimPlus.Application.MappingProfiles
 {
@@ -6,6 +8,8 @@ namespace OlimPlus.Application.MappingProfiles
     {
         public AddressProfile()
         {
+            CreateMap<AddressDto, Address>().ReverseMap();
+            CreateMap<Address, AddressDetailDto>();
         }
     }
 }

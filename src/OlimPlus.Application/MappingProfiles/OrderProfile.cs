@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using OlimPlus.Application.DTO.Order;
+using OlimPlus.Domain.Entity;
 
 namespace OlimPlus.Application.MappingProfiles
 {
@@ -6,6 +8,8 @@ namespace OlimPlus.Application.MappingProfiles
     {
         public OrderProfile()
         {
+            CreateMap<OrderDto, Order>().ReverseMap();
+            CreateMap<Order, OrderDetailDto>();
         }
     }
 }

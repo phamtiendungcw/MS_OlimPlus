@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using OlimPlus.Application.DTO.Coupon;
+using OlimPlus.Domain.Entity;
 
 namespace OlimPlus.Application.MappingProfiles
 {
@@ -6,6 +8,8 @@ namespace OlimPlus.Application.MappingProfiles
     {
         public CouponProfile()
         {
+            CreateMap<CouponDto, Coupon>().ReverseMap();
+            CreateMap<Coupon, CouponDetailDto>();
         }
     }
 }
