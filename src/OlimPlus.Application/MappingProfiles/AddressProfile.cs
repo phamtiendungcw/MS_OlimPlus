@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using OlimPlus.Application.DTO.Address;
+using OlimPlus.Application.Features.Address.Commands.CreateAddressCommand;
+using OlimPlus.Application.Features.Address.Commands.UpdateAddressCommand;
 using OlimPlus.Domain.Entity;
 
 namespace OlimPlus.Application.MappingProfiles
@@ -10,6 +12,8 @@ namespace OlimPlus.Application.MappingProfiles
         {
             CreateMap<AddressDto, Address>().ReverseMap();
             CreateMap<Address, AddressDetailDto>();
+            CreateMap<CreateAddressCommand, Address>();
+            CreateMap<UpdateAddressCommand, Address>();
         }
     }
 }
