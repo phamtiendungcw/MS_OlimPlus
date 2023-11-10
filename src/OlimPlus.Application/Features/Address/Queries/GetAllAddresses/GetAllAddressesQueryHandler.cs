@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using OlimPlus.Application.Contracts;
+using OlimPlus.Application.Contracts.Persistence;
 using OlimPlus.Application.DTO.Address;
 
 namespace OlimPlus.Application.Features.Address.Queries.GetAllAddresses

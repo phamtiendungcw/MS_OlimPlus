@@ -1,6 +1,6 @@
 ﻿using OlimPlus.Domain.Entity.Common;
 
-namespace OlimPlus.Application.Contracts.Common
+namespace OlimPlus.Application.Contracts.Persistence.Common
 {
     public interface IGenericRepository<T> where T : BaseEntity
     {

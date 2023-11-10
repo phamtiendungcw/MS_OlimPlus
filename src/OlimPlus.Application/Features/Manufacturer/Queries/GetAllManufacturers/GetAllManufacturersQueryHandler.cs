@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using OlimPlus.Application.Contracts;
+using OlimPlus.Application.Contracts.Persistence;
 using OlimPlus.Application.DTO.Manufacturer;
 
 namespace OlimPlus.Application.Features.Manufacturer.Queries.GetAllManufacturers

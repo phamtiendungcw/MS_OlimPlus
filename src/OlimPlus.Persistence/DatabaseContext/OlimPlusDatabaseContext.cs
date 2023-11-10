@@ -28,6 +28,7 @@ namespace OlimPlus.Persistence.DatabaseContext
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             modelbuilder.ApplyConfigurationsFromAssembly(typeof(OlimPlusDatabaseContext).Assembly);
+            //modelbuilder.ApplyConfiguration(new AddressConfiguration());
             base.OnModelCreating(modelbuilder);
         }
 
@@ -36,10 +37,10 @@ namespace OlimPlus.Persistence.DatabaseContext
             foreach (var entry in base.ChangeTracker.Entries<BaseEntity>()
                          .Where(x => x.State == EntityState.Added || x.State == EntityState.Modified))
             {
-                entry.Entity.UpdatedAt = DateOnly.FromDateTime(DateTime.Now);
+                entry.Entity.UpdatedAt = DateTime.Now;
 
                 if (entry.State == EntityState.Added)
-                    entry.Entity.CreatedAt = DateOnly.FromDateTime(DateTime.Now);
+                    entry.Entity.CreatedAt = DateTime.Now;
             }
 
             return base.SaveChangesAsync(cancellationToken);

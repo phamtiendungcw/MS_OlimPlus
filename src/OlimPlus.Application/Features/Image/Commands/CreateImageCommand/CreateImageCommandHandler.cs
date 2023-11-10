@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using OlimPlus.Application.Contracts;
+using OlimPlus.Application.Contracts.Persistence;
 
 namespace OlimPlus.Application.Features.Image.Commands.CreateImageCommand
 {

@@ -1,9 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OlimPlus.Application.Contracts.Common;
+using OlimPlus.Application.Contracts.Persistence;
+using OlimPlus.Application.Contracts.Persistence.Common;
 using OlimPlus.Persistence.DatabaseContext;
 using OlimPlus.Persistence.Repositories;
+using OlimPlus.Persistence.Repositories.Common;
 
 namespace OlimPlus.Persistence
 {
@@ -18,6 +20,20 @@ namespace OlimPlus.Persistence
             });
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IAddressRepository, AddressRepository>();
+            services.AddScoped<ICartItemRepository, CartItemRepository>();
+            services.AddScoped<ICartItemRepository, CartItemRepository>();
+            services.AddScoped<ICouponRepository, CouponRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IImageRepository, ImageRepository>();
+            services.AddScoped<IManufacturerRepository, ManufacturerRepository>();
+            services.AddScoped<IOrderInfoRepository, OrderInfoRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
+            services.AddScoped<IProductAttributeRepository, ProductAttributeRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IReviewRepository, ReviewRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         }

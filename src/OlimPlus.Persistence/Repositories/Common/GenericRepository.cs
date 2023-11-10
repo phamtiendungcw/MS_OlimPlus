@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OlimPlus.Application.Contracts.Common;
+using OlimPlus.Application.Contracts.Persistence.Common;
+using OlimPlus.Application.Exceptions;
 using OlimPlus.Domain.Entity.Common;
 using OlimPlus.Persistence.DatabaseContext;
 
-namespace OlimPlus.Persistence.Repositories
+namespace OlimPlus.Persistence.Repositories.Common
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
@@ -33,7 +34,13 @@ namespace OlimPlus.Persistence.Repositories
 
         public async Task<T> GetByIdAsync(int id)
         {
-            return await _context.Set<T>().AsNoTracking().FirstOrDefaultAsync(q => q.Id == id);
+            var data = await _context.Set<T>().AsNoTracking().FirstOrDefaultAsync(q => q.Id == id);
+            if (data is null)
+            {
+                throw new NotFoundException(nameof(T), id);
+            }
+
+            return data;
         }
 
         public async Task UpdateAsync(T entity)

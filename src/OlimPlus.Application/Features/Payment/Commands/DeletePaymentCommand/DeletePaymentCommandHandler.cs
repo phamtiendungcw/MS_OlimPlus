@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using OlimPlus.Application.Contracts;
+using OlimPlus.Application.Contracts.Persistence;
 using OlimPlus.Application.Exceptions;
 
 namespace OlimPlus.Application.Features.Payment.Commands.DeletePaymentCommand
