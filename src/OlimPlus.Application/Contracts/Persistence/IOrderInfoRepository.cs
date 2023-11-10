@@ -1,7 +1,7 @@
-﻿using OlimPlus.Application.Contracts.Common;
+﻿using OlimPlus.Application.Contracts.Persistence.Common;
 using OlimPlus.Domain.Entity;
 
-namespace OlimPlus.Application.Contracts
+namespace OlimPlus.Application.Contracts.Persistence
 {
     public interface IOrderInfoRepository : IGenericRepository<OrderInfo>
     {

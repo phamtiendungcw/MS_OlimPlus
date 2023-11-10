@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using OlimPlus.Application.Contracts;
+using OlimPlus.Application.Contracts.Persistence;
 using OlimPlus.Application.DTO.Customer;
 
 namespace OlimPlus.Application.Features.Customer.Queries.GetAllCustomers

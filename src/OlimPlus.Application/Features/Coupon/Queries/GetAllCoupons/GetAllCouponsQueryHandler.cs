@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using OlimPlus.Application.Contracts;
+using OlimPlus.Application.Contracts.Persistence;
 using OlimPlus.Application.DTO.Coupon;
 
 namespace OlimPlus.Application.Features.Coupon.Queries.GetAllCoupons

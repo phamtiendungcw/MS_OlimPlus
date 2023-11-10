@@ -15,8 +15,4 @@
 	  <ProjectReference Include="..\OlimPlus.Application\OlimPlus.Application.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Configurations\" />
-	</ItemGroup>
-
 </Project>

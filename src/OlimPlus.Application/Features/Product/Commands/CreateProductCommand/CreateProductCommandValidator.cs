@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using OlimPlus.Application.Contracts;
+using OlimPlus.Application.Contracts.Persistence;
 
 namespace OlimPlus.Application.Features.Product.Commands.CreateProductCommand
 {

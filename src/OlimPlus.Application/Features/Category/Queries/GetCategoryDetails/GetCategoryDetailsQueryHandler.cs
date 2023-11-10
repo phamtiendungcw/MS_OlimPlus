@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using OlimPlus.Application.Contracts;
+using OlimPlus.Application.Contracts.Persistence;
 using OlimPlus.Application.DTO.Category;
 using OlimPlus.Application.Exceptions;
 using Entity = OlimPlus.Domain.Entity;
