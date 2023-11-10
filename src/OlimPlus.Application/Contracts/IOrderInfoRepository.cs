@@ -3,7 +3,7 @@ using OlimPlus.Domain.Entity;
 
 namespace OlimPlus.Application.Contracts
 {
-    public interface IOrderDetailRepository : IGenericRepository<OrderDetail>
+    public interface IOrderInfoRepository : IGenericRepository<OrderInfo>
     {
     }
 }

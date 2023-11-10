@@ -2,7 +2,7 @@
 using OlimPlus.Application.Contracts;
 using OlimPlus.Application.Exceptions;
 
-namespace OlimPlus.Application.Features.ProductAttribute.Commands.DeleteProductAttributeCommand
+namespace OlimPlus.Application.Features.Product.Commands.DeleteProductAttributeCommand
 {
     public class DeleteProductAttributeCommandHandler : IRequestHandler<DeleteProductAttributeCommand, Unit>
     {

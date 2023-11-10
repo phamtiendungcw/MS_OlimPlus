@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace OlimPlus.Application.Features.ProductAttribute.Commands.CreateProductAttributeCommand
+namespace OlimPlus.Application.Features.Product.Commands.CreateProductAttributeCommand
 {
     public class CreateProductAttributeCommand : IRequest<int>
     {

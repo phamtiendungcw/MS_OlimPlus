@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace OlimPlus.Application.Features.Review.Commands.UpdateReviewCommand
 {
-    internal class UpdateReviewCommand
+    public class UpdateReviewCommand : IRequest<Unit>
     {
     }
 }

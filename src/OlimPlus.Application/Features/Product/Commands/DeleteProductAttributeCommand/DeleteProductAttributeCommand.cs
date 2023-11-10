@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace OlimPlus.Application.Features.ProductAttribute.Commands.DeleteProductAttributeCommand
+namespace OlimPlus.Application.Features.Product.Commands.DeleteProductAttributeCommand
 {
     public class DeleteProductAttributeCommand : IRequest<Unit>
     {

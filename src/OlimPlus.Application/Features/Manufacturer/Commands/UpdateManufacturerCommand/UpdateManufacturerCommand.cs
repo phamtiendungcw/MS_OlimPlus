@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace OlimPlus.Application.Features.Manufacturer.Commands.UpdateManufacturerCommand
 {
-    internal class UpdateManufacturerCommand
+    public class UpdateManufacturerCommand : IRequest<Unit>
     {
     }
 }

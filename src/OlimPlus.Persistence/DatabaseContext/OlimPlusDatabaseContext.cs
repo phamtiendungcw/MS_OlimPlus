@@ -22,7 +22,7 @@ namespace OlimPlus.Persistence.DatabaseContext
         public DbSet<Coupon> Coupons { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<OrderInfo> OrderInfos { get; set; }
         public DbSet<Payment> Payments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)

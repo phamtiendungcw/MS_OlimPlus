@@ -3,7 +3,7 @@ using MediatR;
 using OlimPlus.Application.Contracts;
 using OlimPlus.Application.DTO.Product;
 
-namespace OlimPlus.Application.Features.ProductAttribute.Queries.GetAllProductAttributes
+namespace OlimPlus.Application.Features.Product.Queries.GetAllProductAttributes
 {
     public class
         GetAllProductAttributesQueryHandler : IRequestHandler<GetAllProductAttributesQuery, List<ProductAttributeDto>>

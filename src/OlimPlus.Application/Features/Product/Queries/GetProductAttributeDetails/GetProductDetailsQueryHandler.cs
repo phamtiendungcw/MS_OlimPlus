@@ -4,7 +4,7 @@ using OlimPlus.Application.Contracts;
 using OlimPlus.Application.DTO.Product;
 using OlimPlus.Application.Exceptions;
 
-namespace OlimPlus.Application.Features.ProductAttribute.Queries.GetProductDetails
+namespace OlimPlus.Application.Features.Product.Queries.GetProductAttributeDetails
 {
     public class GetProductDetailsQueryHandler : IRequestHandler<GetProductDetailsQuery, ProductAttributeDetailDto>
     {

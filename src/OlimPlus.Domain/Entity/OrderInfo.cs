@@ -2,7 +2,7 @@
 
 namespace OlimPlus.Domain.Entity
 {
-    public class OrderDetail : BaseEntity
+    public class OrderInfo : BaseEntity
     {
         public int OrderId { get; set; }
         public int ProductId { get; set; }
