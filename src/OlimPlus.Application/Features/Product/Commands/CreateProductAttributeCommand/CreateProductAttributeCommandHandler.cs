@@ -2,7 +2,7 @@
 using MediatR;
 using OlimPlus.Application.Contracts;
 
-namespace OlimPlus.Application.Features.ProductAttribute.Commands.CreateProductAttributeCommand
+namespace OlimPlus.Application.Features.Product.Commands.CreateProductAttributeCommand
 {
     public class CreateProductAttributeCommandHandler : IRequestHandler<CreateProductAttributeCommand, int>
     {

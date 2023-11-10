@@ -2,9 +2,9 @@
 
 namespace OlimPlus.Application.MappingProfiles
 {
-    public class OrderDetailProfile : Profile
+    public class OrderInfoProfile : Profile
     {
-        public OrderDetailProfile()
+        public OrderInfoProfile()
         {
         }
     }

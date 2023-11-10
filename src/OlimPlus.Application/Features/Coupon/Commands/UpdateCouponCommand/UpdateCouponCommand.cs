@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace OlimPlus.Application.Features.Coupon.Commands.UpdateCouponCommand
 {
-    internal class UpdateCouponCommand
+    public class UpdateCouponCommand : IRequest<Unit>
     {
     }
 }

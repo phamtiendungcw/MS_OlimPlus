@@ -20,7 +20,6 @@ namespace OlimPlus.Application.Features.Order.Commands.UpdateOrderCommand
             // Validate data
 
             var orderToUpdate = _mapper.Map<Domain.Entity.Order>(request);
-
             await _orderRepository.UpdateAsync(orderToUpdate);
 
             return Unit.Value;

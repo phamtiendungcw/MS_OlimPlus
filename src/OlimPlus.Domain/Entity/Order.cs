@@ -9,6 +9,6 @@ namespace OlimPlus.Domain.Entity
         public decimal TotalAmount { get; set; }
         public int ShippingAddressId { get; set; }
         public Customer Customer { get; set; }
-        public List<OrderDetail> OrderDetails { get; set; }
+        public List<OrderInfo> OrderDetails { get; set; }
     }
 }

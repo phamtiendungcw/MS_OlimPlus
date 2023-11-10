@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace OlimPlus.Application.Features.Customer.Commands.UpdateCustomerCommand
 {
-    internal class UpdateCustomerCommand
+    public class UpdateCustomerCommand : IRequest<Unit>
     {
     }
 }
